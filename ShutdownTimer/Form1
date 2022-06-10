@@ -6,10 +6,11 @@ namespace ShutdownTimer
 {
     public partial class Form1 : Form
     {
-        private DateTime ClockwiseStart;
-        private DateTime TimerwiseStart;
+        private DateTime clockwiseStart;
+        private DateTime timerwiseStart;
         private DateTime now = DateTime.Now;
-        public int incre = 72;
+        private int sekunden;
+        private int incre = 72;
 
         public Form1()
         {
@@ -27,9 +28,9 @@ namespace ShutdownTimer
             {
                 if(rdClock.Checked)
                 {
-                    ClockwiseStart = Convert.ToDateTime(cmbClockwise.SelectedItem);
+                    clockwiseStart = Convert.ToDateTime(cmbClockwise.SelectedItem);
                     TimeSpan timeSpan;
-                    timeSpan = ClockwiseStart.Subtract(now);
+                    timeSpan = clockwiseStart.Subtract(now);
 
                     string command = "/C shutdown -s -t " + (int)timeSpan.TotalSeconds + "";
                     Process.Start("cmd.exe", command);
@@ -42,8 +43,8 @@ namespace ShutdownTimer
                     string command = "/C shutdown -s -t "+shutdowntimervalue+"";
                     Process.Start("cmd.exe", command);
                    
-                    TimerwiseStart = now;
-                    TimerwiseStart = TimerwiseStart.AddMinutes(sliderTimerShutdown.Value);
+                    timerwiseStart = now;
+                    timerwiseStart = timerwiseStart.AddMinutes(sliderTimerShutdown.Value);
                 
                 }
                 else
@@ -89,14 +90,14 @@ namespace ShutdownTimer
             notifi.Start();
 
         }
-        int Sekunden;
+        
         private void notifi_Tick(object sender, EventArgs e)
         {
-            Sekunden++;
-            if(Sekunden >=5)
+            sekunden++;
+            if(sekunden >=5)
             {
                 CopyrightNoti.Visible = false;
-                Sekunden = 0;
+                sekunden = 0;
                 notifi.Stop();
             }
         }
@@ -106,7 +107,7 @@ namespace ShutdownTimer
             System.Diagnostics.Process.Start("https://discord.gg/MG937dTPAv");
         }
 
-        private void foreverLabel1_Click(object sender, EventArgs e)
+        private void LbCopyright_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://discord.gg/MG937dTPAv");
         }

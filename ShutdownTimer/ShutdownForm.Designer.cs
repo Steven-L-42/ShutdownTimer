@@ -1,6 +1,6 @@
 ﻿namespace ShutdownTimer
 {
-    partial class Form1
+    partial class frmShutdown
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.spaceForm1 = new ReaLTaiizor.Forms.SpaceForm();
-            this.foreverLabel2 = new ReaLTaiizor.Controls.ForeverLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmShutdown));
+            this.Shutdown = new ReaLTaiizor.Forms.SpaceForm();
+            this.lbCopyright = new ReaLTaiizor.Controls.ForeverLabel();
             this.CopyrightNoti = new ReaLTaiizor.Controls.ForeverNotification();
             this.rdClock = new ReaLTaiizor.Controls.ForeverRadioButton();
             this.rdTimer = new ReaLTaiizor.Controls.ForeverRadioButton();
@@ -45,58 +45,60 @@
             this.spaceLabel1 = new ReaLTaiizor.Controls.SpaceLabel();
             this.spaceClose1 = new ReaLTaiizor.Controls.SpaceClose();
             this.notifi = new System.Windows.Forms.Timer(this.components);
-            this.spaceForm1.SuspendLayout();
+            this.Shutdown.SuspendLayout();
             this.SuspendLayout();
             // 
-            // spaceForm1
+            // Shutdown
             // 
-            this.spaceForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.spaceForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.spaceForm1.Controls.Add(this.foreverLabel2);
-            this.spaceForm1.Controls.Add(this.CopyrightNoti);
-            this.spaceForm1.Controls.Add(this.rdClock);
-            this.spaceForm1.Controls.Add(this.rdTimer);
-            this.spaceForm1.Controls.Add(this.cmbClockwise);
-            this.spaceForm1.Controls.Add(this.parrotClock1);
-            this.spaceForm1.Controls.Add(this.ShutdownStart);
-            this.spaceForm1.Controls.Add(this.sliderTimerShutdown);
-            this.spaceForm1.Controls.Add(this.spaceLabel2);
-            this.spaceForm1.Controls.Add(this.spaceMinimize1);
-            this.spaceForm1.Controls.Add(this.spaceQuest1);
-            this.spaceForm1.Controls.Add(this.spaceLabel1);
-            this.spaceForm1.Controls.Add(this.spaceClose1);
-            this.spaceForm1.Customization = "Kioq/yAgIP8qKir/Kioq/xwcHP/+/v7/Kysr/xkZGf8=";
-            this.spaceForm1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.spaceForm1.Font = new System.Drawing.Font("Verdana", 8F);
-            this.spaceForm1.Image = null;
-            this.spaceForm1.Location = new System.Drawing.Point(0, 0);
-            this.spaceForm1.MaximumSize = new System.Drawing.Size(409, 217);
-            this.spaceForm1.MinimumSize = new System.Drawing.Size(409, 217);
-            this.spaceForm1.Movable = true;
-            this.spaceForm1.Name = "spaceForm1";
-            this.spaceForm1.NoRounding = false;
-            this.spaceForm1.Padding = new System.Windows.Forms.Padding(5, 25, 5, 5);
-            this.spaceForm1.Sizable = false;
-            this.spaceForm1.Size = new System.Drawing.Size(409, 217);
-            this.spaceForm1.SmartBounds = true;
-            this.spaceForm1.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.spaceForm1.TabIndex = 0;
-            this.spaceForm1.Text = "Shutdown-Timer";
-            this.spaceForm1.TransparencyKey = System.Drawing.Color.Purple;
-            this.spaceForm1.Transparent = false;
+            this.Shutdown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
+            this.Shutdown.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Shutdown.Controls.Add(this.lbCopyright);
+            this.Shutdown.Controls.Add(this.CopyrightNoti);
+            this.Shutdown.Controls.Add(this.rdClock);
+            this.Shutdown.Controls.Add(this.rdTimer);
+            this.Shutdown.Controls.Add(this.cmbClockwise);
+            this.Shutdown.Controls.Add(this.parrotClock1);
+            this.Shutdown.Controls.Add(this.ShutdownStart);
+            this.Shutdown.Controls.Add(this.sliderTimerShutdown);
+            this.Shutdown.Controls.Add(this.spaceLabel2);
+            this.Shutdown.Controls.Add(this.spaceMinimize1);
+            this.Shutdown.Controls.Add(this.spaceQuest1);
+            this.Shutdown.Controls.Add(this.spaceLabel1);
+            this.Shutdown.Controls.Add(this.spaceClose1);
+            this.Shutdown.Customization = "Kioq/yAgIP8qKir/Kioq/xwcHP/+/v7/Kysr/xkZGf8=";
+            this.Shutdown.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Shutdown.Font = new System.Drawing.Font("Verdana", 8F);
+            this.Shutdown.Image = null;
+            this.Shutdown.Location = new System.Drawing.Point(0, 0);
+            this.Shutdown.MaximumSize = new System.Drawing.Size(409, 217);
+            this.Shutdown.MinimumSize = new System.Drawing.Size(409, 217);
+            this.Shutdown.Movable = true;
+            this.Shutdown.Name = "Shutdown";
+            this.Shutdown.NoRounding = false;
+            this.Shutdown.Padding = new System.Windows.Forms.Padding(5, 25, 5, 5);
+            this.Shutdown.Sizable = false;
+            this.Shutdown.Size = new System.Drawing.Size(409, 217);
+            this.Shutdown.SmartBounds = true;
+            this.Shutdown.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Shutdown.TabIndex = 0;
+            this.Shutdown.Text = "Shutdown-Timer";
+            this.Shutdown.TransparencyKey = System.Drawing.Color.Purple;
+            this.Shutdown.Transparent = false;
             // 
-            // foreverLabel2
+            // lbCopyright
             // 
-            this.foreverLabel2.AutoSize = true;
-            this.foreverLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.foreverLabel2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.foreverLabel2.ForeColor = System.Drawing.Color.LightGray;
-            this.foreverLabel2.Location = new System.Drawing.Point(8, 197);
-            this.foreverLabel2.Name = "foreverLabel2";
-            this.foreverLabel2.Size = new System.Drawing.Size(87, 13);
-            this.foreverLabel2.TabIndex = 26;
-            this.foreverLabel2.Text = "by ShiiikK#1048";
-            this.foreverLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbCopyright.AutoSize = true;
+            this.lbCopyright.BackColor = System.Drawing.Color.Transparent;
+            this.lbCopyright.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbCopyright.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.lbCopyright.ForeColor = System.Drawing.Color.LightGray;
+            this.lbCopyright.Location = new System.Drawing.Point(8, 197);
+            this.lbCopyright.Name = "lbCopyright";
+            this.lbCopyright.Size = new System.Drawing.Size(87, 13);
+            this.lbCopyright.TabIndex = 26;
+            this.lbCopyright.Text = "by ShiiikK#1048";
+            this.lbCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbCopyright.Click += new System.EventHandler(this.LbCopyright_Click);
             // 
             // CopyrightNoti
             // 
@@ -319,13 +321,13 @@
             this.notifi.Interval = 1000;
             this.notifi.Tick += new System.EventHandler(this.notifi_Tick);
             // 
-            // Form1
+            // frmShutdown
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(409, 217);
-            this.Controls.Add(this.spaceForm1);
+            this.Controls.Add(this.Shutdown);
             this.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.GhostWhite;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -334,20 +336,20 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(409, 217);
             this.MinimumSize = new System.Drawing.Size(409, 217);
-            this.Name = "Form1";
+            this.Name = "frmShutdown";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
             this.TransparencyKey = System.Drawing.Color.Purple;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.spaceForm1.ResumeLayout(false);
-            this.spaceForm1.PerformLayout();
+            this.Shutdown.ResumeLayout(false);
+            this.Shutdown.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ReaLTaiizor.Forms.SpaceForm spaceForm1;
+        private ReaLTaiizor.Forms.SpaceForm Shutdown;
         private ReaLTaiizor.Controls.SpaceClose spaceClose1;
         private ReaLTaiizor.Controls.SpaceQuest spaceQuest1;
         private ReaLTaiizor.Controls.ForeverToggle ShutdownStart;
@@ -361,7 +363,7 @@
         private ReaLTaiizor.Controls.SpaceLabel spaceLabel1;
         private ReaLTaiizor.Controls.ForeverNotification CopyrightNoti;
         private System.Windows.Forms.Timer notifi;
-        private ReaLTaiizor.Controls.ForeverLabel foreverLabel2;
+        private ReaLTaiizor.Controls.ForeverLabel lbCopyright;
     }
 }
 
